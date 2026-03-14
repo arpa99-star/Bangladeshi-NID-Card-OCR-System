@@ -85,7 +85,7 @@ NID_eKYC_OCR_System
     └── Overall Confidence Score
 
 ---
-
+```
 ### Limitations
 
 #### **Limited Dataset Availability**
