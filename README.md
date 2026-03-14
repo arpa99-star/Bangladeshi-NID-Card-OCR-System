@@ -100,3 +100,14 @@ Key identity fields such as Name, Date of Birth, and NID Number are extracted us
 Confidence scoring is currently calculated only for three main fields: Name, Date of Birth, and NID Number. Other textual information present on the NID card is not included in the confidence evaluation.
 
 ---
+
+### Dataset Link
+
+---
+
+The dataset used for this project is sourced from Kaggle:
+🔗 **[Bangladeshi National ID (NID) Card Dataset](https://www.kaggle.com/datasets/prottashasaha/bd-nid-card)**
+
+This dataset contains images of Bangladeshi NID cards which were utilized to test and evaluate the OCR pipeline and field extraction accuracy.
+
+---
