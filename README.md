@@ -47,7 +47,6 @@ Implements a field-wise confidence evaluation system:
 * Overall OCR reliability score
 
 #### **Batch Processing**
-* Processes large datasets of NID images
 * Generates structured outputs for analysis
 
 #### **Result Export**
@@ -62,22 +61,27 @@ Implements a field-wise confidence evaluation system:
 
 ### System Pipeline
 
-Input NID Image
-      ↓
-Image Enhancement (Real-ESRGAN)
-      ↓
-Image Preprocessing
-(Grayscale + Denoising + CLAHE + Thresholding)
-      ↓
-Multilingual OCR (EasyOCR)
-      ↓
-Field Detection (Regex-based patterns)
-      ↓
-Confidence Score Calculation
-      ↓
-Output Results
-• Extracted Text
-• Field-wise Confidence
-• Overall Confidence Score
+```bash
+NID_eKYC_OCR_System/
+│
+├── Input NID Image
+│   └── ↓
+├── Image Enhancement (Real-ESRGAN)
+│   └── ↓
+├── Image Preprocessing
+│   ├── Grayscale + Denoising
+│   ├── CLAHE (Contrast Enhancement)
+│   └── Otsu Thresholding
+│   └── ↓
+├── Multilingual OCR (EasyOCR)
+│   └── ↓
+├── Field Detection (Regex-based patterns)
+│   └── ↓
+├── Confidence Score Calculation
+│   └── ↓
+└── Output Results
+    ├── Extracted Text
+    ├── Field-wise Confidence
+    └── Overall Confidence Score
 
 
