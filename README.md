@@ -62,7 +62,7 @@ Implements a field-wise confidence evaluation system:
 ### System Pipeline
 
 ```bash
-NID_eKYC_OCR_System/
+NID_eKYC_OCR_System
 │
 ├── Input NID Image
 │   └── ↓
