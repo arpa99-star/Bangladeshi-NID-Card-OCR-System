@@ -84,4 +84,17 @@ NID_eKYC_OCR_System/
     ├── Field-wise Confidence
     └── Overall Confidence Score
 
+---
 
+### Limitations
+
+#### **Limited Dataset Availability**
+The dataset used in this project is relatively small. Due to the limited amount of training data, it was not feasible to train a deep learning model from scratch for NID field detection or OCR improvement.
+
+#### **Rule-Based Field Extraction**
+Key identity fields such as Name, Date of Birth, and NID Number are extracted using regex-based pattern matching rather than a fully trained document understanding model.
+
+#### **Limited Confidence Evaluation**
+Confidence scoring is currently calculated only for three main fields: Name, Date of Birth, and NID Number. Other textual information present on the NID card is not included in the confidence evaluation.
+
+---
